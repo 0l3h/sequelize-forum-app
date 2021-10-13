@@ -1,0 +1,29 @@
+GET http://127.0.0.1:5000/messages
+
+###
+
+GET http://127.0.0.1:5000/messages/2
+
+###
+
+POST http://127.0.0.1:5000/messages
+Content-Type: application/json
+
+{
+    "text": "Third text message",
+    "email": "thirduser@mail.com",
+    "date": "2021-01-01"
+}
+
+###
+
+PATCH http://127.0.0.1:5000/messages/2
+Content-Type: application/json
+
+{
+    "text": "Updated text"
+}
+
+###
+
+DELETE http://127.0.0.1:5000/messages/2
